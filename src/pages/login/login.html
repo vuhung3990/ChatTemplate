@@ -5,5 +5,23 @@
   Ionic pages and navigation.
 -->
 <ion-content padding>
-  
+    <ion-item>
+        <ion-label floating>{{'login.label.email' | translate}}</ion-label>
+        <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label floating>{{'login.label.password' | translate}}</ion-label>
+        <ion-input type="password"></ion-input>
+    </ion-item>
+    <button ion-button round block class="login-button">{{'login.label.submit' | translate}}</button>
+    <ion-item no-lines>
+        <ion-label>{{'login.label.remember' | translate}}</ion-label>
+        <ion-checkbox></ion-checkbox>
+    </ion-item>
+    <ion-grid>
+        <ion-row>
+            <ion-col width-40 class="right"><a>{{'login.label.register' | translate}} |</a></ion-col>
+            <ion-col width-60><a>{{'login.label.forgot_password' | translate}}</a></ion-col>
+        </ion-row>
+    </ion-grid>
 </ion-content>

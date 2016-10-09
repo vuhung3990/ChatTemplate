@@ -1,8 +1,12 @@
 {
     "login": {
         "label": {
-            "input-pin": "Enter PIN Code",
-            "confirm-pin": "Re-type PIN"
+            "email": "Email",
+            "password": "Password",
+            "register": "Sign up",
+            "submit": "Sign In",
+            "forgot_password": "Forgot password?",
+            "remember": "Remember"
         }
     }
 }
