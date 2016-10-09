@@ -1,0 +1,8 @@
+{
+    "login": {
+        "label": {
+            "input-pin": "Enter PIN Code",
+            "confirm-pin": "Re-type PIN"
+        }
+    }
+}
