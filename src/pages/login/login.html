@@ -13,14 +13,14 @@
         <ion-label floating>{{'login.label.password' | translate}}</ion-label>
         <ion-input type="password"></ion-input>
     </ion-item>
-    <button ion-button round block class="login-button">{{'login.label.submit' | translate}}</button>
-    <ion-item no-lines>
+    <ion-item no-lines class="padding-top">
         <ion-label>{{'login.label.remember' | translate}}</ion-label>
         <ion-checkbox></ion-checkbox>
     </ion-item>
-    <ion-grid>
+    <button ion-button round block (click)="login()">{{'login.label.submit' | translate}}</button>
+    <ion-grid class="padding-top">
         <ion-row>
-            <ion-col width-40 class="right"><a>{{'login.label.register' | translate}} |</a></ion-col>
+            <ion-col width-40 class="right" (click)="signup()"><a>{{'login.label.register' | translate}} |</a></ion-col>
             <ion-col width-60><a>{{'login.label.forgot_password' | translate}}</a></ion-col>
         </ion-row>
     </ion-grid>

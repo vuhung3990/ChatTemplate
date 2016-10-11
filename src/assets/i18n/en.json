@@ -8,5 +8,12 @@
             "forgot_password": "Forgot password?",
             "remember": "Remember"
         }
+    },
+    "register": {
+        "label": {
+          "re_password": "Confirm password",
+          "full_name": "Full name",
+          "agree": "I agree the term of use"
+        }
     }
 }

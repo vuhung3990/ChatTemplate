@@ -1,3 +1,5 @@
+import {HomePage} from "../home/home";
+import {Signup} from "../signup/signup";
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
@@ -18,4 +20,13 @@ export class Login {
     console.log('Hello Login Page');
   }
 
+  /** go to signup page */
+  signup(){
+    this.navCtrl.push(Signup);
+  }
+
+  /** check valid & correct info => login */
+  login(){
+    this.navCtrl.setRoot(HomePage);
+  }
 }
