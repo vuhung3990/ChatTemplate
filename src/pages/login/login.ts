@@ -1,7 +1,7 @@
-import {HomePage} from "../home/home";
 import {Signup} from "../signup/signup";
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import {Main} from "../main/main";
 
 /*
   Generated class for the Login page.
@@ -27,6 +27,6 @@ export class Login {
 
   /** check valid & correct info => login */
   login(){
-    this.navCtrl.setRoot(HomePage);
+    this.navCtrl.setRoot(Main);
   }
 }

@@ -1,0 +1,7 @@
+<ion-tabs tabsPlacement="top">
+  <ion-tab [root]="tab1Root" tabTitle="{{'tabs.label.history' | translate}}" tabBadge="{{unReadMsgCount > 0 ? unReadMsgCount : ''}}"
+    tabIcon="text"></ion-tab>
+  <ion-tab [root]="tab2Root" tabTitle="{{'tabs.label.contact' | translate}}" tabBadge="{{contactRequestCount > 0 ? contactRequestCount : ''}}"
+    tabIcon="people"></ion-tab>
+  <ion-tab [root]="tab3Root" tabTitle="{{'tabs.label.profile' | translate}}" tabIcon="person"></ion-tab>
+</ion-tabs>

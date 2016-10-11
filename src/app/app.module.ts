@@ -1,9 +1,12 @@
+import {Me} from "../pages/me/me";
+import {Contact} from "../pages/contact/contact";
+import {Main} from "../pages/main/main";
 import {Login} from "../pages/login/login";
 import { NgModule } from '@angular/core';
 import { IonicApp, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
 import {Signup} from "../pages/signup/signup";
+import {History} from "../pages/history/history";
 
 import {BrowserModule} from "@angular/platform-browser";
 import {HttpModule, Http} from '@angular/http';
@@ -15,9 +18,12 @@ export function createTranslateLoader(http: Http) {
 @NgModule({
     declarations: [
         MyApp,
-        HomePage,
         Login,
-        Signup
+        Signup,
+        Main,
+        History,
+        Contact,
+        Me
     ],
     imports: [
         IonicModule.forRoot(MyApp),
@@ -33,9 +39,12 @@ export function createTranslateLoader(http: Http) {
     bootstrap: [IonicApp],
     entryComponents: [
         MyApp,
-        HomePage,
         Login,
-        Signup
+        Signup,
+        Main,
+        History,
+        Contact,
+        Me
     ],
     providers: []
 })

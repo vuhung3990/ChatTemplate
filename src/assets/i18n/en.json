@@ -15,5 +15,12 @@
           "full_name": "Full name",
           "agree": "I agree the term of use"
         }
+    },
+    "tabs": {
+      "label": {
+        "history": "History",
+        "contact": "Contact",
+        "profile": "Profile"
+      }
     }
 }
