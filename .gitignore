@@ -32,3 +32,9 @@ $RECYCLE.BIN/
 .DS_Store
 Thumbs.db
 UserInterfaceState.xcuserstate
+
+# kdiff3 tmp files
+*-base
+*-ours
+*-theirs
+*.orig
