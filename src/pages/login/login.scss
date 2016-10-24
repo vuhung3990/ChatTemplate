@@ -1,7 +1,5 @@
 page-login {
-    .padding-top {
-        padding-top: 15px;
-    }
+    @include marginTop($defaultMarginTop);
 
     .right{
       text-align: right;

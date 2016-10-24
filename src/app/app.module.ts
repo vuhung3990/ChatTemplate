@@ -1,3 +1,4 @@
+import {ForgotPassword} from "../pages/forgot-password/forgot-password";
 import {Me} from "../pages/me/me";
 import {Contact} from "../pages/contact/contact";
 import {Main} from "../pages/main/main";
@@ -23,7 +24,8 @@ export function createTranslateLoader(http: Http) {
         Main,
         History,
         Contact,
-        Me
+        Me,
+        ForgotPassword
     ],
     imports: [
         IonicModule.forRoot(MyApp),
@@ -44,7 +46,8 @@ export function createTranslateLoader(http: Http) {
         Main,
         History,
         Contact,
-        Me
+        Me,
+        ForgotPassword
     ],
     providers: []
 })

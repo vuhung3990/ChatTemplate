@@ -18,10 +18,10 @@
         <ion-checkbox></ion-checkbox>
     </ion-item>
     <button ion-button round block (click)="login()">{{'login.label.submit' | translate}}</button>
-    <ion-grid class="padding-top">
+    <ion-grid class="default-margin-top">
         <ion-row>
             <ion-col width-40 class="right" (click)="signup()"><a>{{'login.label.register' | translate}} |</a></ion-col>
-            <ion-col width-60><a>{{'login.label.forgot_password' | translate}}</a></ion-col>
+            <ion-col width-60 (click)="forgotPassword()"><a>{{'login.label.forgot_password' | translate}}</a></ion-col>
         </ion-row>
     </ion-grid>
 </ion-content>
