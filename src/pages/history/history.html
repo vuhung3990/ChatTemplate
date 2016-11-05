@@ -4,6 +4,19 @@
   See http://ionicframework.com/docs/v2/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-content padding>
-
+<ion-content>
+  <ion-list inset>
+    <ion-item  *ngFor="let item of historyConversations">
+      <ion-avatar item-left>
+        <img src="{{item.avatar}}">
+      </ion-avatar>
+      <h2>{{item.name}}</h2>
+      <p>
+        <!--for unread-->
+        <b *ngIf="!item.isRead">{{item.message}}</b>
+        <i *ngIf="item.isRead">{{item.message}}</i>
+      </p>
+      <ion-note item-right>{{item.dateTime}}</ion-note>
+    </ion-item>
+  </ion-list>
 </ion-content>
