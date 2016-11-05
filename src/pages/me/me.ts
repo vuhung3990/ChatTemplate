@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { App } from 'ionic-angular';
+import { Login } from '../login/login';
 
 /*
   Generated class for the Me page.
@@ -13,10 +14,14 @@ import { NavController } from 'ionic-angular';
 })
 export class Me {
 
-  constructor(public navCtrl: NavController) {}
+  constructor(private app: App) {}
 
   ionViewDidLoad() {
     console.log('Hello Me Page');
+  }
+
+  logout(){
+    this.app.getRootNav().setRoot(Login);
   }
 
 }

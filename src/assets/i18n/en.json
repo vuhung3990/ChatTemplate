@@ -23,5 +23,14 @@
             "contact": "Contact",
             "profile": "Profile"
         }
+    },
+    "me": {
+        "label": {
+            "info": "Info",
+            "logout": "Logout"
+        }
+    },
+    "chat": {
+        "input_hint": "Send a message"
     }
 }

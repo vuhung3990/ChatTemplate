@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { App } from 'ionic-angular';
+import { Chat } from '../chat/chat';
 
 /*
   Generated class for the History page.
@@ -48,8 +49,21 @@ export class History {
       message: "can i take care of your wife before you die?",
       dateTime: "sep 15"
     }
-  ] 
-  constructor(public navCtrl: NavController) {}
+  ]
+  constructor(private app: App) { }
+
+  openChat(index: number) {
+    let param: any = {
+      title: this.historyConversations[index].name,
+      history: [
+        {
+          isMine: false,
+          message: this.historyConversations[index].message
+        }
+      ]
+    }
+    this.app.getRootNav().push(Chat, param);
+  }
 
   ionViewDidLoad() {
     console.log('Hello History Page');

@@ -14,10 +14,6 @@ import {TranslateService} from "ng2-translate";
 export class ForgotPassword {
 
     constructor(public navCtrl: NavController, public translate: TranslateService) {
-
-        this.translate.reloadLang('en').subscribe(() => {
-            setTimeout(() => this.translate.use('en'), 0);
-        });
     }
 
     ionViewDidLoad() {

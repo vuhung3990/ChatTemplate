@@ -1,0 +1,24 @@
+<!--
+  Generated template for the Chat page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar>
+        <ion-title>{{conversation.title}}</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content padding>
+    <div class="chat">
+        <div class="bubble {{item.isMine ? 'me' : 'you'}}" *ngFor="let item of conversation.history">{{item.message}}</div>
+    </div>
+</ion-content>
+<ion-footer>
+    <ion-grid>
+        <ion-row>
+            <ion-input type="text" #input [(ngModel)]="message" placeholder="{{'chat.input_hint' | translate}}"></ion-input>
+            <button ion-fab mini class="send" (click)="send(input)"><ion-icon name="send"></ion-icon></button>
+        </ion-row>
+    </ion-grid>
+</ion-footer>

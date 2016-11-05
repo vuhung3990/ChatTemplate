@@ -24,7 +24,7 @@
             Sea.</p>
         <ion-list no-border>
             <ion-list-header>
-                Info
+                {{'me.label.info' | translate}}
             </ion-list-header>
             <ion-item>
                 <ion-icon name='call' item-left></ion-icon>
@@ -43,5 +43,7 @@
                 Married with Daenerys Targaryen
             </ion-item>
         </ion-list>
+
+        <button ion-button round block (click)="logout()">{{'me.label.logout' | translate}}</button>
     </div>
 </ion-content>

@@ -1,17 +1,18 @@
-import {ForgotPassword} from "../pages/forgot-password/forgot-password";
-import {Me} from "../pages/me/me";
-import {Contact} from "../pages/contact/contact";
-import {Main} from "../pages/main/main";
-import {Login} from "../pages/login/login";
+import { ForgotPassword } from "../pages/forgot-password/forgot-password";
+import { Me } from "../pages/me/me";
+import { Contact } from "../pages/contact/contact";
+import { Main } from "../pages/main/main";
+import { Login } from "../pages/login/login";
 import { NgModule } from '@angular/core';
 import { IonicApp, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
-import {Signup} from "../pages/signup/signup";
-import {History} from "../pages/history/history";
+import { Signup } from "../pages/signup/signup";
+import { History } from "../pages/history/history";
+import { Chat } from '../pages/chat/chat';
 
-import {BrowserModule} from "@angular/platform-browser";
-import {HttpModule, Http} from '@angular/http';
-import {TranslateModule, TranslateLoader, TranslateStaticLoader} from 'ng2-translate/ng2-translate';
+import { BrowserModule } from "@angular/platform-browser";
+import { HttpModule, Http } from '@angular/http';
+import { TranslateModule, TranslateLoader, TranslateStaticLoader } from 'ng2-translate/ng2-translate';
 
 export function createTranslateLoader(http: Http) {
     return new TranslateStaticLoader(http, './assets/i18n', '.json');
@@ -25,7 +26,8 @@ export function createTranslateLoader(http: Http) {
         History,
         Contact,
         Me,
-        ForgotPassword
+        ForgotPassword,
+        Chat
     ],
     imports: [
         IonicModule.forRoot(MyApp),
@@ -47,7 +49,8 @@ export function createTranslateLoader(http: Http) {
         History,
         Contact,
         Me,
-        ForgotPassword
+        ForgotPassword,
+        Chat
     ],
     providers: []
 })
