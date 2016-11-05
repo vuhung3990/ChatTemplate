@@ -38,3 +38,6 @@ UserInterfaceState.xcuserstate
 *-ours
 *-theirs
 *.orig
+
+#release key
+*.keystore
